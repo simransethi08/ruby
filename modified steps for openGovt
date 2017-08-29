@@ -1,0 +1,19 @@
+java-1.8.0-openjdk-amd64
+
+
+1) sudo apt-get install libxmu6:amd64
+2) sudo apt-get install libgtk2.0-0:amd64
+3) sudo apt-get install libpangox-1.0-0:amd64
+4) sudo apt-get install libpangoxft-1.0:amd64
+5) sudo apt-get install libxtst6:amd64
+6) sudo apt-get install libasound2:amd64
+7) sudo apt-get install libxv1:amd64
+
+
+1) sudo apt-get -y remove icedtea-8-plugin:amd64 icedtea-netx:amd64
+2) sudo apt-get install openjdk-8-jre:amd64 libxmu6:amd64 icedtea-8-plugin firefox
+3) sudo update-alternatives --auto mozilla-javaplugin.so
+If the above fails hit the below command
+sudo update-alternatives --set mozilla-javaplugin.so /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/IcedTeaPlugin.so
+
+
